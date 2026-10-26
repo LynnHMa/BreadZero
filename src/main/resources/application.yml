@@ -1,0 +1,21 @@
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: BreadZero
+
+server:
+  port: 12323
+
+shiro:
+  ws:
+    server:
+      enable: true
+
+  plugin-list:
+    - org.cunmin18.breadzero.plugins.BilibiliDynamicsPusherPlugin
+    - org.cunmin18.breadzero.plugins.CommandManagerPlugin
+    - org.cunmin18.breadzero.plugins.RecallerTerminatorPlugin
+    - org.cunmin18.breadzero.plugins.PowerBillCheckerPlugin
+    - org.cunmin18.breadzero.plugins.UpdateBotPlugin
+
